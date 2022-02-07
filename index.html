@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paczkomat - odbiór paczki</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="panel">
+
+        <h1 class="panel__title">Envelo</h1>
+
+        <section class="message">
+            <p class="message__text">Możesz mieć swoją przesyłkę w kilkanaście sekund!</p>
+            <p class="message__text">Rozpocznij klikając w przycisk</p>
+        </section>
+
+        <form id="form" class="form">
+
+            <div class="group">
+                <input class="form__input" type="number" required id="phoneNumber">
+                <label class="form__label" id="errorPhone">Numer telefonu</label>
+            </div>
+
+            <div class="group">
+                <input class="form__input" type="number" required id="codeNumber">
+                <label class="form__label" id="errorCode">Numer kodu:</label>
+            </div>
+
+        </form>
+
+        <section class="button">
+            <button id="buttonStart" class="button__start">Odbierz paczkę</button>
+            <button id="buttonCheck" class="button__next">Otwórz skrytkę</button>
+        </section>
+
+    </div>
+
+    <!-- hidden modal -->
+    <div class="modal">
+
+        <div class="modal-content">
+            <div class="modal-content__top">
+                <h1 class="modal-content__title">Paczka Odebrania!</h1>
+            </div>
+
+            <div class="modal-content__middle">
+                <p class="modal-content__text">Zrobiłeś to w czasie 10 sekund! Co możemy jeszcze dla Ciebie zrobić?</p>
+            </div>
+
+            <div class="modal-content__bottom">
+                <button id="buttonReset" class="modal-content__button-start">To wszystko na dziś</button>
+                <button id="buttonAgain" class="modal-content__button-next">Odbierz kolejną paczkę</button>
+            </div>
+        </div>
+
+        <script src="./scripts/Panel.js" type="module"></script>
+</body>
+
+</html>
