@@ -1,0 +1,12 @@
+.message {
+    flex-basis: 100%;
+    
+    &__text {
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0 55px;
+        letter-spacing: 2px;
+    }
+
+}

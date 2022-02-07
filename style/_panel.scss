@@ -1,0 +1,33 @@
+.panel {
+    width: 90%;
+    height: 90vh;
+    background-color: $bg-color-panel;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $font-color-text;
+    border-style: outset;
+    
+    @media (min-width: 1000px) and (orientation: landscape ) {
+        width: 60%;
+        height: 80vh;
+    }
+
+    // for elements in panel
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        text-align: center;
+        color: $font-color-text;
+
+    }
+    
+
+    
+
+
+}

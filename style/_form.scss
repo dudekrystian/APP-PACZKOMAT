@@ -1,0 +1,47 @@
+.form {
+    display: none;
+    background-color: #e74c3c;
+    color: white;
+
+    .group { 
+      position:relative; 
+      margin-bottom:45px; 
+
+      .form__input {
+        font-size:18px;
+        padding:10px 10px 10px 5px;
+        display:block;
+        width:300px;
+        border:none;
+        border-bottom:1px solid white;
+        background-color: #e74c3c;
+        color: white;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+
+      .form__label {
+      color: white; 
+      font-size:18px;
+      font-weight:normal;
+      position:absolute;
+      pointer-events:none;
+      left:5px;
+      top:10px;
+      transition:0.2s ease all; 
+      }
+    }
+
+    .form__input:focus ~ .form__label, .form__input:valid ~ .form__label{
+      top:-20px;
+      font-size:14px;
+      color:#00ff88;
+      background-color: #e74c3c;
+
+    }
+
+
+}
